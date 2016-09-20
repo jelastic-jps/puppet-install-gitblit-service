@@ -6,7 +6,7 @@ This repository provides installation VDS node with puppet agent and preconfigur
 Puppet install all required modules and configure Apache server with GitBlit.
 Installation logs are available in /tmp directory.
 
-**Type of nodes this add-on can be applied to:**
+**Type of nodes this add-on can be applied to:**  
 VDS node
 
 ## Deployment
