@@ -26,11 +26,11 @@
             "execCmd": {
               "commands": [
                 "curl -fsSL https://goo.gl/tL5vhU -o /tmp/fr_git_server.pp",
-                "rpm -ivh https://goo.gl/tucAyk 1>/tmp/install.log 2>/tmp/install.log",
-                "yum -y install puppet 1>/tmp/install.log 2>/tmp/install.log",
-                "puppet module install puppetlabs-firewall 1>/tmp/install.log 2>/tmp/install.log",
-                "puppet module install puppetlabs-apache 1>/tmp/install.log 2>/tmp/install.log",
-                "puppet module install maestrodev-artifactory 1>/tmp/install.log 2>/tmp/install.log",
+                "rpm -ivh https://goo.gl/tucAyk 1>>/tmp/install.log 2>>/tmp/install.log",
+                "yum -y install puppet 1>>/tmp/install.log 2>>/tmp/install.log",
+                "puppet module install puppetlabs-firewall 1>>/tmp/install.log 2>>/tmp/install.log",
+                "puppet module install puppetlabs-apache 1>>/tmp/install.log 2>>/tmp/install.log",
+                "puppet module install maestrodev-artifactory 1>>/tmp/install.log 2>>/tmp/install.log",
                 "curl -fsSL --create-dirs 'https://goo.gl/esR3aw' -o /fr_gitblit/gitblit.properties.erb",
                 "curl -fsSL --create-dirs 'https://goo.gl/HhFyli' -o /fr_gitblit/gitblit.service.erb",
                 "cd /tmp/; puppet apply fr_git_server.pp 1>>/tmp/install.log 2>>/tmp/install.log"
