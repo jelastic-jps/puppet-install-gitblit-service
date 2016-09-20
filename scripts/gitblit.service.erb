@@ -1,0 +1,13 @@
+[Unit]
+Description=gitblit
+After=home.mount
+
+[Service]
+WorkingDirectory=<%= @git_home %>/<%= @gitblit %>
+ExecStart=/bin/java -server -Xmx1024M -Djava.awt.headless=true -jar <%= @git_home %>/<%= @gitblit %>/gitblit.jar --baseFolder <%= @git_home %>/<%= @gitblit %>/data
+ExecStop=/bin/java -server -Xmx1024M -Djava.awt.headless=true -jar <%= @git_home %>/<%= @gitblit %>/gitblit.jar --baseFolder <%= @git_home %>/<%= @gitblit %>/data --stop
+Restart=on-abort
+User=<%= @git_user %>
+
+[Install]
+WantedBy=multi-user.target
