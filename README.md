@@ -5,8 +5,8 @@
 -->
 
 This repository provides installation VDS node with puppet agent and preconfigured GitBlit service.
-Puppet install all required modules and configure Apache server with GitBlit.
-Installation logs are available in /tmp directory.
+Puppet installs all required modules and configures Apache server with GitBlit.
+Installation logs are available in /var/log/run.log.
 
 **Type of nodes this add-on can be applied to:**  
 VDS node
